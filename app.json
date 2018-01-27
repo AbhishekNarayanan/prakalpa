@@ -4,7 +4,7 @@
   "repository": "https://github.com/AbhishekNarayanan/prakalpa.git",
   "logo": "https://avatars0.githubusercontent.com/u/25057028",
   "keywords": ["alexa", "amazon", "echo", "skills"],
-  "success_url": "\test",
+  "success_url": "https://cryptic-harbor-35556.herokuapp.com/test",
   "buildpacks": [
     {
       "url": "heroku/nodejs"
