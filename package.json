@@ -1,0 +1,31 @@
+{
+  "name": "alexa-app-example",
+  "version": "0.0.1",
+  "description": "An example Alexa Skill project using the alexa-app module with Express.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AbhishekNarayanan/prakalpa.git"
+  },
+  "keywords": [
+    "alexa",
+    "amazon",
+    "echo",
+    "skills"
+  ],
+  "author": "Lukasz Budnik <lukasz.budnik@gmail.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/AbhishekNarayanan/prakalpa.git/issues"
+  },
+  "dependencies": {
+    "alexa-app": "^4.0.0",
+    "ejs": "^2.5.6",
+    "express": "^4.15.2",
+ "node-gcm": "^0.14.4"
+  }
+}
