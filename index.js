@@ -7,7 +7,7 @@ var PORT = process.env.PORT || 8080;
 var app = express();
 
 // ALWAYS setup the alexa app and attach it to express before anything else.
-var alexaApp = new alexa.app("robot");
+var alexaApp = new alexa.app("test");
 
 alexaApp.express({
   expressApp: app,
@@ -28,8 +28,8 @@ alexaApp.express({
 // from here on you can setup any other express routes or middlewares as normal
 app.set("view engine", "ejs");
 
-const gcmServerKey = "AAAA4RsNXKo:APA91bGlYpjjYAbSdEBbmzmZgYmiT6DCybujGwY1BkwwltiHnvVWP24_ey-l49BAF3PJdd0VWOovNihEMIFH2qwr__Mfc7vH-a0_ZgE8pLig1K_9M6qqokFK9yHXFBM9LmnpDGOL6UE2";
-const registrationToken = "c85fiBwP_Ow:APA91bEhu1sxuRkp6NSXUlxU_bHoOafrPgJyXnZ6jCTwzZeqA8GuKPbSt9IqDWreiistF7YcmlLsv9mer0BZkNzSmsY5oXb1HiELlt2_gW7UJemtEyms4UPRvmhGEj5CvOoNBCqVYknQ";
+const gcmServerKey = process.env.GCM_SERVER_KEY;
+const registrationToken = process.env.REGISTRATION_TOKEN;
 
 var sender = new gcm.Sender(gcmServerKey);
 var registrationTokens = [registrationToken];
