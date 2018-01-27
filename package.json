@@ -1,5 +1,5 @@
 {
-  "name": "alexa-app-example",
+  "name": "prakalpa",
   "version": "0.0.1",
   "description": "An example Alexa Skill project using the alexa-app module with Express.",
   "main": "index.js",
